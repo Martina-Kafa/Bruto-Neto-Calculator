@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bruto-Neto</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="naslov">
+        <h1>BruTo-NeTo Calculator</h1>
+    </div>
+  <div class="calculator">
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" />
+    <br>
+    <label for="percent">Percentage:</label>
+    <select id="percent">
+      <option value="20">20%</option>
+      <option value="21.21">21.21%</option>
+    </select>
+    <br>
+    <button onclick="calculateBruto()">Calculate Bruto</button>
+    <button onclick="calculateNeto()">Calculate Neto</button>
+    <br>
+    <label for="bruto">Bruto Price:</label>
+    <span id="bruto"></span>
+    <br>
+    <label for="neto">Neto Price:</label>
+    <span id="neto"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
