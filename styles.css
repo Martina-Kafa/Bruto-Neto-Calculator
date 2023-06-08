@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+  }
+  
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/pexels-kelly-2876511.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8; 
+    position: absolute;
+  }
+
+  h1 {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+    opacity: 0.7;
+  }
+  
+  .calculator {
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 20px;
+    pADDING: 30px;
+    background-color: white;
+    opacity: 0.85;
+    font-weight: 800;
+    margin-bottom: 200px;
+    z-index: 100;
+  }
+  
+  label {
+    display: inline-block;
+    width: 100px;
+    padding: 10px;
+  }
+  
+  input[type="number"] {
+    width: 200px;
+    font-weight: 500;
+    font-size: 17px;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px;
+    width: 160px;
+    font-weight: 700;
+    border-radius: 10px;
+  }
+  button:hover {
+    background-color: rgb(64, 92, 82);
+    color: white;
+  }
+  
+  span {
+    margin-left: 10px;
+  }
+ 
+ .oblaci {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+ }
+
+ .oblaci img {
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  animation: animate calc(15s * var(--i)) linear infinite;
+ }
+  
+ @keyframes animate {
+   0%{
+    transform: translate(-100%);
+   }
+   100% {
+    transform: translate(100%)
+   }
+ }
+
